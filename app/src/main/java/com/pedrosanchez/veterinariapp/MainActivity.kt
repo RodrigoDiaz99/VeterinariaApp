@@ -1,5 +1,6 @@
 package com.pedrosanchez.veterinariapp
 
+import android.content.ClipData
 import android.os.Bundle
 import android.view.Menu
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -22,6 +23,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
+        val settings: Toolbar = findViewById(R.id.action_acerca)
+
+
         setSupportActionBar(toolbar)
 
         val fab: FloatingActionButton = findViewById(R.id.fab)

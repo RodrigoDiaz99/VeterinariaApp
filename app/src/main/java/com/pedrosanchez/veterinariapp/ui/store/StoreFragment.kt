@@ -1,21 +1,18 @@
-package com.pedrosanchez.veterinariapp.ui.home
+package com.pedrosanchez.veterinariapp.ui.store
 
-
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebView
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.pedrosanchez.veterinariapp.R
 
-
-class HomeFragment : Fragment() {
+class StoreFragment : Fragment() {
 
     private lateinit var WebView: WebView
 
-    @SuppressLint("SetJavaScriptEnabled")
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
@@ -23,7 +20,7 @@ class HomeFragment : Fragment() {
     ): View? {
         val view = inflater!!.inflate(R.layout.fragment_home, container, false)
         WebView = view.findViewById (R.id.webView) as WebView
-        WebView.loadUrl("http://cooperwashh.herokuapp.com")
+        WebView.loadUrl("http://cooperwashh.herokuapp.com/shop")
         return view
     }
 }

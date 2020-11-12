@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AcercaDe">
+
+    <!-- view for AdMob Interstitial Ad -->
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Manual de Ayuda"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="372dp"
+        android:layout_height="605dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="1. El Proposito general de esta app es que puedas comprar los diversos accesorios para tu mascota en la Tienda COOPER WASH.    Para realizar tus compras es muy simple!! ve al apartado de la Tienda agregar al carrito todos los accesorios que quieras comprar dando clic en el boton comprar una vez escojido tus productos ve a tu carrito de compras, haz valida tu compra dando clic en finalizar compra y nuestra App te imprimira un voucher con los datos necesarios para que puedas acudir al establecimiento fisico de COOPER Wash, pagar tus productos y Ahora si ya todo sería tuyo.                                                  Facil y divertido!!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_title" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
